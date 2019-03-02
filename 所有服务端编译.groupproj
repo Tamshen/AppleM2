@@ -1,0 +1,114 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3e12019a-8041-490c-996e-6e3abfc74cfe}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="GameOfMir\DBServer\DBServer.bdsproj" />
+    <Projects Include="GameOfMir\GameCenter\GameCenter.bdsproj" />
+    <Projects Include="GameOfMir\LogDataServer\LogDataServer.bdsproj" />
+    <Projects Include="GameOfMir\LoginGate\LoginGate.bdsproj" />
+    <Projects Include="GameOfMir\LoginSrv\LoginSrv.bdsproj" />
+    <Projects Include="GameOfMir\M2Engine\M2Server.bdsproj" />
+    <Projects Include="GameOfMir\MirClient\mir2.bdsproj" />
+    <Projects Include="GameOfMir\RunGate\RunGate.bdsproj" />
+    <Projects Include="GameOfMir\SelGate\SelGate.bdsproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="GameCenter">
+    <MSBuild Projects="GameOfMir\GameCenter\GameCenter.bdsproj" Targets="" />
+  </Target>
+  <Target Name="GameCenter:Clean">
+    <MSBuild Projects="GameOfMir\GameCenter\GameCenter.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="GameCenter:Make">
+    <MSBuild Projects="GameOfMir\GameCenter\GameCenter.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="DBServer">
+    <MSBuild Projects="GameOfMir\DBServer\DBServer.bdsproj" Targets="" />
+  </Target>
+  <Target Name="DBServer:Clean">
+    <MSBuild Projects="GameOfMir\DBServer\DBServer.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="DBServer:Make">
+    <MSBuild Projects="GameOfMir\DBServer\DBServer.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="LogDataServer">
+    <MSBuild Projects="GameOfMir\LogDataServer\LogDataServer.bdsproj" Targets="" />
+  </Target>
+  <Target Name="LogDataServer:Clean">
+    <MSBuild Projects="GameOfMir\LogDataServer\LogDataServer.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="LogDataServer:Make">
+    <MSBuild Projects="GameOfMir\LogDataServer\LogDataServer.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="LoginGate">
+    <MSBuild Projects="GameOfMir\LoginGate\LoginGate.bdsproj" Targets="" />
+  </Target>
+  <Target Name="LoginGate:Clean">
+    <MSBuild Projects="GameOfMir\LoginGate\LoginGate.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="LoginGate:Make">
+    <MSBuild Projects="GameOfMir\LoginGate\LoginGate.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="LoginSrv">
+    <MSBuild Projects="GameOfMir\LoginSrv\LoginSrv.bdsproj" Targets="" />
+  </Target>
+  <Target Name="LoginSrv:Clean">
+    <MSBuild Projects="GameOfMir\LoginSrv\LoginSrv.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="LoginSrv:Make">
+    <MSBuild Projects="GameOfMir\LoginSrv\LoginSrv.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="M2Server">
+    <MSBuild Projects="GameOfMir\M2Engine\M2Server.bdsproj" Targets="" />
+  </Target>
+  <Target Name="M2Server:Clean">
+    <MSBuild Projects="GameOfMir\M2Engine\M2Server.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="M2Server:Make">
+    <MSBuild Projects="GameOfMir\M2Engine\M2Server.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="RunGate">
+    <MSBuild Projects="GameOfMir\RunGate\RunGate.bdsproj" Targets="" />
+  </Target>
+  <Target Name="RunGate:Clean">
+    <MSBuild Projects="GameOfMir\RunGate\RunGate.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="RunGate:Make">
+    <MSBuild Projects="GameOfMir\RunGate\RunGate.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="SelGate">
+    <MSBuild Projects="GameOfMir\SelGate\SelGate.bdsproj" Targets="" />
+  </Target>
+  <Target Name="SelGate:Clean">
+    <MSBuild Projects="GameOfMir\SelGate\SelGate.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="SelGate:Make">
+    <MSBuild Projects="GameOfMir\SelGate\SelGate.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="mir2">
+    <MSBuild Projects="GameOfMir\MirClient\mir2.bdsproj" Targets="" />
+  </Target>
+  <Target Name="mir2:Clean">
+    <MSBuild Projects="GameOfMir\MirClient\mir2.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="mir2:Make">
+    <MSBuild Projects="GameOfMir\MirClient\mir2.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="GameCenter;DBServer;LogDataServer;LoginGate;LoginSrv;M2Server;RunGate;SelGate;mir2" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="GameCenter:Clean;DBServer:Clean;LogDataServer:Clean;LoginGate:Clean;LoginSrv:Clean;M2Server:Clean;RunGate:Clean;SelGate:Clean;mir2:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="GameCenter:Make;DBServer:Make;LogDataServer:Make;LoginGate:Make;LoginSrv:Make;M2Server:Make;RunGate:Make;SelGate:Make;mir2:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

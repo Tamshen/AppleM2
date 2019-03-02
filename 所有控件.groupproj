@@ -1,0 +1,134 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{ee90a64d-9ccd-4020-bf3b-73ffa86ce411}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="Component\BitBtn\BitBtn.bdsproj" />
+    <Projects Include="Component\BusinesSkin\BSFD2007.bdsproj" />
+    <Projects Include="Component\D3D\D3DPackage.bdsproj" />
+    <Projects Include="Component\GraphicEx\GraphicExPack.bdsproj" />
+    <Projects Include="Component\HGEDelphi\Source\HGEPackage.bdsproj" />
+    <Projects Include="Component\JSocket\Install.bdsproj" />
+    <Projects Include="Component\MyDirect9\MyDX9Package.bdsproj" />
+    <Projects Include="Component\RSA\PacRAS.bdsproj" />
+    <Projects Include="Component\VCLSkin5.60\package\WinSkinD2007.dproj" />
+    <Projects Include="Component\VCLZip\VCLZipD7_3.bdsproj" />
+    <Projects Include="Component\WebBrowserUI\PAKWebBrowserUI.bdsproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Install">
+    <MSBuild Projects="Component\JSocket\Install.bdsproj" Targets="" />
+  </Target>
+  <Target Name="Install:Clean">
+    <MSBuild Projects="Component\JSocket\Install.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="Install:Make">
+    <MSBuild Projects="Component\JSocket\Install.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="BitBtn">
+    <MSBuild Projects="Component\BitBtn\BitBtn.bdsproj" Targets="" />
+  </Target>
+  <Target Name="BitBtn:Clean">
+    <MSBuild Projects="Component\BitBtn\BitBtn.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="BitBtn:Make">
+    <MSBuild Projects="Component\BitBtn\BitBtn.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="BSFD2007">
+    <MSBuild Projects="Component\BusinesSkin\BSFD2007.bdsproj" Targets="" />
+  </Target>
+  <Target Name="BSFD2007:Clean">
+    <MSBuild Projects="Component\BusinesSkin\BSFD2007.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="BSFD2007:Make">
+    <MSBuild Projects="Component\BusinesSkin\BSFD2007.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="GraphicExPack">
+    <MSBuild Projects="Component\GraphicEx\GraphicExPack.bdsproj" Targets="" />
+  </Target>
+  <Target Name="GraphicExPack:Clean">
+    <MSBuild Projects="Component\GraphicEx\GraphicExPack.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="GraphicExPack:Make">
+    <MSBuild Projects="Component\GraphicEx\GraphicExPack.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="D3DPackage">
+    <MSBuild Projects="Component\D3D\D3DPackage.bdsproj" Targets="" />
+  </Target>
+  <Target Name="D3DPackage:Clean">
+    <MSBuild Projects="Component\D3D\D3DPackage.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="D3DPackage:Make">
+    <MSBuild Projects="Component\D3D\D3DPackage.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="MyDX9Package">
+    <MSBuild Projects="Component\MyDirect9\MyDX9Package.bdsproj" Targets="" />
+  </Target>
+  <Target Name="MyDX9Package:Clean">
+    <MSBuild Projects="Component\MyDirect9\MyDX9Package.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="MyDX9Package:Make">
+    <MSBuild Projects="Component\MyDirect9\MyDX9Package.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="PacRAS">
+    <MSBuild Projects="Component\RSA\PacRAS.bdsproj" Targets="" />
+  </Target>
+  <Target Name="PacRAS:Clean">
+    <MSBuild Projects="Component\RSA\PacRAS.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="PacRAS:Make">
+    <MSBuild Projects="Component\RSA\PacRAS.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="WinSkinD2007">
+    <MSBuild Projects="Component\VCLSkin5.60\package\WinSkinD2007.dproj" Targets="" />
+  </Target>
+  <Target Name="WinSkinD2007:Clean">
+    <MSBuild Projects="Component\VCLSkin5.60\package\WinSkinD2007.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="WinSkinD2007:Make">
+    <MSBuild Projects="Component\VCLSkin5.60\package\WinSkinD2007.dproj" Targets="Make" />
+  </Target>
+  <Target Name="VCLZipD7_3">
+    <MSBuild Projects="Component\VCLZip\VCLZipD7_3.bdsproj" Targets="" />
+  </Target>
+  <Target Name="VCLZipD7_3:Clean">
+    <MSBuild Projects="Component\VCLZip\VCLZipD7_3.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="VCLZipD7_3:Make">
+    <MSBuild Projects="Component\VCLZip\VCLZipD7_3.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="PAKWebBrowserUI">
+    <MSBuild Projects="Component\WebBrowserUI\PAKWebBrowserUI.bdsproj" Targets="" />
+  </Target>
+  <Target Name="PAKWebBrowserUI:Clean">
+    <MSBuild Projects="Component\WebBrowserUI\PAKWebBrowserUI.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="PAKWebBrowserUI:Make">
+    <MSBuild Projects="Component\WebBrowserUI\PAKWebBrowserUI.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="HGEPackage">
+    <MSBuild Projects="Component\HGEDelphi\Source\HGEPackage.bdsproj" Targets="" />
+  </Target>
+  <Target Name="HGEPackage:Clean">
+    <MSBuild Projects="Component\HGEDelphi\Source\HGEPackage.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="HGEPackage:Make">
+    <MSBuild Projects="Component\HGEDelphi\Source\HGEPackage.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Install;BitBtn;BSFD2007;GraphicExPack;D3DPackage;MyDX9Package;PacRAS;WinSkinD2007;VCLZipD7_3;PAKWebBrowserUI;HGEPackage" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Install:Clean;BitBtn:Clean;BSFD2007:Clean;GraphicExPack:Clean;D3DPackage:Clean;MyDX9Package:Clean;PacRAS:Clean;WinSkinD2007:Clean;VCLZipD7_3:Clean;PAKWebBrowserUI:Clean;HGEPackage:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Install:Make;BitBtn:Make;BSFD2007:Make;GraphicExPack:Make;D3DPackage:Make;MyDX9Package:Make;PacRAS:Make;WinSkinD2007:Make;VCLZipD7_3:Make;PAKWebBrowserUI:Make;HGEPackage:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>
